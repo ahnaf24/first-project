@@ -10,7 +10,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 1px solid #1f1c1c;
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
@@ -36,6 +36,17 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
+
+.topnav .search-container{
+  float: right;
+}
+
+.topnav .search-container{
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+}
+
 </style>
 </head>
 <body>
@@ -45,7 +56,7 @@ input[type=submit]:hover {
 <div class="container">
   <form action="/action_page.php">
     <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <input type="text" id="fname" name="firstname" placeholder="Your first name..">
 
     <label for="lname">Last Name</label>
     <input type="text" id="lname" name="lastname" placeholder="Your last name..">
@@ -63,6 +74,15 @@ input[type=submit]:hover {
     <input type="submit" value="Submit">
   </form>
 </div>
+
+<div class="search-container">
+  <form action="/action_page.php">
+    <input type="text" placeholder="Search.." name="search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+  </form>
+</div>
+
+<script src="main.js"></script>
 
 </body>
 </html>
